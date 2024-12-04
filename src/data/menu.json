@@ -1,0 +1,74 @@
+{
+    "categories": [
+      {
+        "type": "soup",
+        "name": {
+          "chinese": "汤",
+          "malay": "Sup"
+        },
+        "items": [
+          {
+            "name": {
+              "chinese": "鸡汤",
+              "english": "Chicken Soup"
+            },
+            "photo_url": "https://example.com/photos/chicken_soup.jpg"
+          },
+          {
+            "name": {
+              "chinese": "牛肉汤",
+              "english": "Beef Soup"
+            },
+            "photo_url": "https://example.com/photos/beef_soup.jpg"
+          }
+        ]
+      },
+      {
+        "type": "meat",
+        "name": {
+          "chinese": "肉类",
+          "malay": "Daging"
+        },
+        "items": [
+          {
+            "name": {
+              "chinese": "宫保鸡丁",
+              "english": "Kung Pao Chicken"
+            },
+            "photo_url": "https://example.com/photos/kung_pao_chicken.jpg"
+          },
+          {
+            "name": {
+              "chinese": "红烧牛肉",
+              "english": "Braised Beef"
+            },
+            "photo_url": "https://example.com/photos/braised_beef.jpg"
+          }
+        ]
+      },
+      {
+        "type": "vegetable",
+        "name": {
+          "chinese": "蔬菜",
+          "malay": "Sayur"
+        },
+        "items": [
+          {
+            "name": {
+              "chinese": "清炒西兰花",
+              "english": "Stir-fried Broccoli"
+            },
+            "photo_url": "https://example.com/photos/stir_fried_broccoli.jpg"
+          },
+          {
+            "name": {
+              "chinese": "蒜蓉空心菜",
+              "english": "Garlic Water Spinach"
+            },
+            "photo_url": "https://example.com/photos/garlic_spinach.jpg"
+          }
+        ]
+      }
+    ]
+  }
+  
