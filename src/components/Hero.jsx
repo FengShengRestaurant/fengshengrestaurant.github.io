@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import Notification from './Notification'; // Import Notifications component
-
+import { Link } from 'react-router-dom';
 export default function Hero() {
   const { language } = useLanguage();
 
@@ -38,7 +38,7 @@ export default function Hero() {
       <div className="min-h-screen flex-grow flex flex-col justify-center items-center relative isolate">
         <div
           aria-hidden="true"
-          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 pointer-events-none"
         >
           <div
             style={{
@@ -58,12 +58,12 @@ export default function Hero() {
             {description}
           </p>
           <div className="mt-10">
-            <a
-              href="/menu"
-              className="rounded-md bg-orange px-3.5 py-2.5 text-xl font-semibold text-white shadow-sm hover:text-brown hover:bg-bright-yellow duration-300 ease-in-out"
+            <Link
+              to="/menu"
+              className="inline-block rounded-md z-10 bg-orange px-5 py-3 text-white font-semibold hover:bg-bright-yellow hover:text-brown duration-300 ease-in-out"
             >
               {buttonText}
-            </a>
+            </Link>
           </div>
         </div>
       </div>

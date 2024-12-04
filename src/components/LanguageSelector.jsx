@@ -15,7 +15,7 @@ const LanguageSelector = () => {
       <button
         onClick={() => switchLanguage('en')}
         aria-pressed={language === 'en'}
-        className={`min-w-[100px] px-4 py-2 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+        className={`min-w-[130px] px-4 py-2 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
           language === 'en'
             ? 'bg-orange text-white'
             : 'border border-orange text-orange bg-transparent hover:bg-bright-yellow focus:ring-orange hover:text-black'
@@ -28,7 +28,7 @@ const LanguageSelector = () => {
       <button
         onClick={() => switchLanguage('zh')}
         aria-pressed={language === 'zh'}
-        className={`min-w-[100px] px-4 py-2 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+        className={`min-w-[130px] px-4 py-2 rounded transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
           language === 'zh'
             ? 'bg-orange text-white'
             : 'border border-orange text-orange bg-transparent hover:bg-bright-yellow focus:ring-orange hover:text-black'

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext'; // Import Language Context
-
+import { Link } from 'react-router-dom';
 const Menu = () => {
   const { language } = useLanguage(); // Access the current language
 
@@ -45,12 +45,12 @@ const Menu = () => {
           <h1 className="text-4xl font-bold text-brown mb-4">{heading}</h1>
           <p className="text-lg text-gray-600">{message}</p>
           <div className="mt-8">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="inline-block rounded-md bg-orange px-5 py-3 text-white font-semibold hover:bg-bright-yellow hover:text-brown duration-300 ease-in-out"
             >
               {button}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
