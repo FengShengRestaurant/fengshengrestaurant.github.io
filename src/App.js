@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/fengshengrestaurant.github.io">
       <div className='min-h-screen flex flex-col'>
         <Header />
         <div className='flex-grow'>
