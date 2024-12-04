@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+    <script>
+      // Redirect to the React app's `index.html` for React Router to handle routing
+      var redirectTo = window.location.origin + '/shop' + window.location.pathname + window.location.search;
+      window.location.href = redirectTo;
+    </script>
+    <style>
+      /* Tailwind-like styles for the 404 page */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #6B3A19; /* brown */
+        color: #F6D7A7; /* cream */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #FDCB58; /* bright yellow */
+      }
+      p {
+        font-size: 1.25rem;
+        color: #E49E29; /* orange */
+        margin-top: 1rem;
+      }
+      a {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: #FDCB58; /* bright yellow */
+        color: #6B3A19; /* brown */
+        border-radius: 0.5rem;
+        transition: background-color 0.3s ease;
+      }
+      a:hover {
+        background-color: #E49E29; /* orange */
+        color: #F6D7A7; /* cream */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Oops! Page Not Found</h1>
+      <p>We couldn't find the page you're looking for. Redirecting you to the main page...</p>
+      <a href="/shop">Go to Homepage</a>
+    </div>
+  </body>
+</html>
